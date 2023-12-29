@@ -3,8 +3,8 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  background: #181a1b;
-  color: #333;
+  background: #131516;
+  color: #c4bfb8;
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: 23px;
   font-weight: 100;
@@ -29,20 +29,24 @@ body {
   position: relative;
   width: calc(100% - 50px);
 }
+
 #header #nav {
   position: absolute;
   right: 10px;
   bottom: 20px;
 }
+
 #header a {
-  color: #000;
+  color: #c4bfb8;
   transition: 0.15s ease-in-out;
   text-decoration: none;
 }
+
 #header a:hover {
   color: #888;
   top: -3px;
 }
+
 #content {
   padding: 15px 20px 20px 20px;
   width: calc(100% - 50px);
@@ -51,17 +55,18 @@ body {
   border-radius: 25px;
   margin-bottom: 50px;
 }
+
 #footer {
   max-width: 550px;
   text-align: center;
   padding-bottom: 80px;
 }
+
 .bold {
   font-weight: bold;
   font-size: 1.3rem;
 }
 
-/* fonts stuff */
 .smallest {
   font-size: 0.7rem;
 }
@@ -82,6 +87,7 @@ body {
   cursor: cell;
   color: #da2e2e;
 }
+
 a {
   font-style: italic;
   color: #ff2e2e;
