@@ -94,3 +94,27 @@ a {
   text-decoration: underline;
   cursor: alias;
 }
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 0.3rem;
+  line-height: 1.1em;
+}
+
+.bullets {
+  color: #808080;
+  /* un-selectable */
+  user-select: none;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  /* un-draggable */
+  -webkit-user-drag: none; /* Chrome/Safari */
+}
+
+.sub-keywords {
+  text-decoration: underline;
+  font-style: italic;
+}
