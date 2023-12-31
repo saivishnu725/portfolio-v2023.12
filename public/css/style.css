@@ -118,3 +118,29 @@ li {
   text-decoration: underline;
   font-style: italic;
 }
+
+.box {
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background-color: #1a1a1a;
+}
+
+.border {
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
