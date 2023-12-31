@@ -178,3 +178,16 @@ li {
   padding: 0;
   border: 0;
 }
+
+.project-img {
+  width: 600px;
+  height: auto;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin: 0.5rem;
+}
+
+.right-side {
+  float: right;
+  margin-left: 1rem;
+}

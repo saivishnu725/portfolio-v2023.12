@@ -223,6 +223,25 @@
       </ul>
       <!-- projects -->
       <p class="title">Projects // Lame ahh things I've done</p>
+      <% projects.forEach(function(p) { %>
+      <div class="box-container">
+        <div class="box">
+          <h2><%= p.name %></h2>
+          <img
+            src="images/projects/<%= p.image %>"
+            alt="<%= p.name %>'s image"
+            class="project-img"
+          />
+          <p><%= p.description %></p>
+          <a href="/projects/<%= p.readMoreLink %>" class="read-more">
+            Read More
+          </a>
+        </div>
+        <% }); %>
+        <a href="/projects" class="read-more"> see all projects... </a>
+      </div>
+      <!-- end of projects -->
+      <hr />
       <!-- blogs -->
       <!-- social media/ email links -->
       <!-- end of contents -->

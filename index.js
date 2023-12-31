@@ -40,14 +40,30 @@ let current_age = calculateAge(27, 6, 2003);
 // my current life status (study, work, etc.)
 let life_status = "studying BCA at New Horizon College, Bangalore.";
 
-
+// projects
+let projects = [
+    {
+        name: "Man Page",
+        description: "A custom implementation of the Man Page website created by Michael Kerrisk.",
+        image: "man-page.png",
+        readMoreLink: "man-page",
+        codeURL: "https://github.com/saivishnu725/man_page/"
+    },
+    {
+        name: "Attendance Management",
+        description: "A website that will store the attendance information of my day to day college, and will display the percentage.",
+        image: "attendance-web.png",
+        readMoreLink: "attendance-web",
+        codeURL: "https://github.com/saivishnu725/attendance-web"
+    },
+];
 
 
 // Routes
 
 // GET: home page
 app.get("/", function (req, res) {
-    res.render("home", { current_age: current_age, status: life_status });
+    res.render("home", { current_age: current_age, status: life_status, projects: projects });
 });
 
 app.listen(3000, function () {
