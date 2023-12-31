@@ -24,17 +24,26 @@
         <span class="bold">Hi, I'm Sai Vishnu (aka The Unconcerned Ape)</span>
         <br />
         <span class="smaller mono">Just a tech</span> <br />
-        Just a lost grain of sand from the beaches that were left behind. W<br />
+        Just a lost grain of sand from the beaches that were left behind. <br />
 
         I'm a <%= current_age %> yo guy <%= status %>
       </p>
       <br />
-      <p>Here are few phrases/sentences that I randomly threw together:</p>
-      <!-- TODO: Make the the long ahh text to be hidden and then show it only when the title is clicked. -->
+      <p>
+        Here are few phrases/sentences that I randomly threw together <br />
+        <span class="bold smallest">
+          (Click on the <span class="sub-keywords">title</span> for the looong
+          boring texts)
+        </span>
+        :
+      </p>
       <ul class="smaller">
         <!-- computers -->
-        <li>
-          <span class="bullets">1.</span> I've been interested in
+        <li onclick="revealText('computers')">
+          <span class="bullets">1.</span> Why Computers?
+        </li>
+        <div class="visually-hidden box" id="computers">
+          I've been interested in
           <span class="keyword">computers</span> since I was a 15 year old kid.
           It all started when I got curious on why
           <span class="sub-keywords">int</span> can't store any value above
@@ -42,41 +51,126 @@
           fact that a computer is very structured and everything that it does
           has a well thought out reason behind it.
           <span class="mono smaller">(I'm a nerd!)</span>
-        </li>
+        </div>
+
         <!-- linux -->
-        <li>
-          <span class="bullets">2.</span> I love
+        <li onclick="revealText('linux')">
+          <span class="bullets">2.</span> Why I use Linux?
+        </li>
+        <div class="visually-hidden box" id="linux">
+          I love
           <span class="keyword">Linux</span>.
-          <span class="bold smallest"
-            >(GNU/Linux, or as I've recently taken to calling it, GNU plus
-            Linux.)</span
-          >
+          <span class="bold smallest">
+            (GNU/Linux, or as I've recently taken to calling it, GNU plus
+            Linux.)
+          </span>
           I love the fact that it's open and I can customise it to my liking.
           The mere fact that I have some control on what my computer can do /
           does. I initially got into it mostly because I hated Windows 10. This
           is probably one of the best decisions I've ever made and I don't
           regret it a bit.
           <span class="mono smaller">(I use Arch btw!)</span>
-        </li>
+        </div>
+
         <!-- why web dev lately -->
-        <li>
-          <span class="bullets">3.</span> I've been doing a lot of
+        <li onclick="revealText('web-dev')">
+          <span class="bullets">3.</span> Why Am I learning Web Dev lately?
+        </li>
+        <div class="visually-hidden box" id="web-dev">
+          I've been doing a lot of
           <span class="keyword">web dev</span> stuff lately. I think it's
           because I've been kinda demotivated lately and saw some quick timepass
           with web dev. I'm not sure if I'll stick with it though. Don't get me
           wrong. This is a very interesting field and I'm learning a lot of new
           stuff. But it's just not what I am aiming for my future to be
-          <span class="bold smallest"
-            >(mostly because I suck at UI/UX big time)</span
-          >. I'm still trying to figure out what I want to do with my life.
+          <span class="bold smallest">
+            (mostly because I suck at UI/UX big time).
+          </span>
+          I'm still trying to figure out what I want to do with my life.
           <span class="mono smaller"
             >(I liked Express, EJS and would like to know more about AWS!)</span
           >
-        </li>
-        <!-- passion -->
+        </div>
+
         <!-- want to learn/dream of a future in -->
+        <li onclick="revealText('future')">
+          <span class="bullets">4.</span> What is my aim for the future? // What
+          Next?
+        </li>
+        <div class="visually-hidden box" id="future">
+          I have tinkered around in a lot of things/tools for the past few years
+          and from what I've observed, I've come to this conclusion that my
+          heart lies in
+          <span class="keyword">low level programming</span>. I really love how
+          it is implemented. I've been trying to learn something related to it
+          for a while but never got my way around it but it is true that every
+          time I think of what my
+          <span class="keyword">future role</span> should be, it always ends up
+          being something Systems related and specifically Linux or low level
+          management. <br />
+          <span class="mono smaller"
+            >I'm still trying to figure out how to achieve this goal of mine.
+            <span class="bold smallest"
+              >(Any suggestions or motivations is welcomed)</span
+            ></span
+          >
+        </div>
+
         <!-- what I do in my free time -->
+        <li onclick="revealText('free-time')">
+          <span class="bullets">5.</span> What do i do in my free time? //
+          Hobbies
+        </li>
+        <div class="visually-hidden box" id="free-time">
+          I like to spend my
+          <span class="keyword">free time</span>
+          <span class="sub-keywords"> reading books </span> or
+          <span class="sub-keywords"> watching Movies </span> <br />
+          My favorite books are:
+          <ul class="border">
+            <li>
+              <span class="italic">They Both Die At The End </span>
+              <span class="smaller bold">- Adam Silvera</span>
+            </li>
+            <li>
+              <span class="italic">A Walk To Remember</span>
+              <span class="smaller bold">- Nicholas Sparks</span>
+            </li>
+            <li>
+              <span class="italic">The Fault In Our Stars</span>
+              <span class="smaller bold">- John Green</span>
+            </li>
+            <li>
+              <span class="italic"
+                >Aristotle and Dante Discover the Secrets of the Universe</span
+              >
+              <span class="smaller bold">- Simon & Schuster</span>
+            </li>
+          </ul>
+          My favorite Movies/Shows are:
+          <ul class="border">
+            <li>
+              <span class="italic">They Both Die At The End </span>
+              <span class="smaller bold">- Adam Silvera</span>
+            </li>
+            <li>
+              <span class="italic">A Walk To Remember</span>
+              <span class="smaller bold">- Nicholas Sparks</span>
+            </li>
+            <li>
+              <span class="italic">The Fault In Our Stars</span>
+              <span class="smaller bold">- John Green</span>
+            </li>
+            <li>
+              <span class="italic"
+                >Aristotle and Dante Discover the Secrets of the Universe</span
+              >
+              <span class="smaller bold">- Simon & Schuster</span>
+            </li>
+          </ul>
+        </div>
       </ul>
     </div>
+    <script src="js/home.js"></script>
   </body>
 </html>
