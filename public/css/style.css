@@ -47,6 +47,14 @@ body {
   top: -3px;
 }
 
+#header img {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  bottom: -23px;
+  width: 100px;
+}
+
 #content {
   padding: 15px 20px 20px 20px;
   width: calc(100% - 50px);
@@ -114,6 +122,8 @@ li {
   -webkit-user-drag: none; /* Chrome/Safari */
 }
 
+
+
 .sub-keywords {
   text-decoration: underline;
   font-style: italic;
@@ -132,6 +142,17 @@ li {
   border-radius: 5px;
   padding: 0.5rem;
   margin: 0.5rem;
+}
+
+.quote {
+  border-left: 5px solid #333;
+  font-style: italic;
+  padding-left: 2rem;
+  margin-left: 2rem;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .visually-hidden {
