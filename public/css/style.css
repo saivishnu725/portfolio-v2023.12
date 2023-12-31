@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik+Doodle+Shadow:regular);
+
 html,
 body {
   width: 100%;
@@ -28,6 +30,13 @@ body {
   max-width: 870px;
   position: relative;
   width: calc(100% - 50px);
+}
+
+/* media query that converts the anchor tags inside a div to be block elements instead of inline when the device width is less than 560px */
+@media screen and (max-width: 560px) {
+  #header a {
+    display: block;
+  }
 }
 
 #header #nav {
@@ -62,6 +71,13 @@ body {
   border: 5px solid #333;
   border-radius: 25px;
   margin-bottom: 50px;
+}
+
+.title {
+  font-family: "Rubik Doodle Shadow", "Helvetica", "Arial", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-bottom: 0.5rem;
 }
 
 #footer {
@@ -122,8 +138,6 @@ li {
   -webkit-user-drag: none; /* Chrome/Safari */
 }
 
-
-
 .sub-keywords {
   text-decoration: underline;
   font-style: italic;
@@ -147,8 +161,7 @@ li {
 .quote {
   border-left: 5px solid #333;
   font-style: italic;
-  padding-left: 2rem;
-  margin-left: 2rem;
+  padding-left: 1rem;
 }
 
 .underline {
