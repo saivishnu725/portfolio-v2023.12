@@ -58,12 +58,30 @@ let projects = [
     },
 ];
 
+// blogs
+let blogs = [
+    {
+        title: "Mr. Robot and the reason why people don't like it. (wrote this one ages ago. So, don't judge. xD)",
+        description: "Just a small set of sentences about how Mr. Robot is mistaken to be something that it is not. ",
+        link: "http://theunconcernedape.me/blogs/blog1.html",
+    },
+    {
+        title: "Add a Directory to Path in ZSH (write this one for GeeksForGeeks 🤓 )",
+        description: "Wrote an article in GeeksForGeeks and it got published. I am yet to write more.",
+        link: "https://www.geeksforgeeks.org/add-a-directory-to-path-in-zsh/"
+    }
+];
 
 // Routes
 
 // GET: home page
 app.get("/", function (req, res) {
-    res.render("home", { current_age: current_age, status: life_status, projects: projects });
+    res.render("home", {
+        current_age: current_age,
+        status: life_status,
+        projects: projects,
+        blogs: blogs
+    });
 });
 
 app.listen(3000, function () {

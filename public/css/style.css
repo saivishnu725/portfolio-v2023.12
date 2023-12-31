@@ -164,6 +164,12 @@ li {
   padding-left: 1rem;
 }
 
+.description {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #808080;
+}
+
 .underline {
   text-decoration: underline;
 }

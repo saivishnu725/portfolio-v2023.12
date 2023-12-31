@@ -13,7 +13,7 @@
       <div id="nav">
         <a href=""> blog <span>&middot;</span> </a>
         <a href=""> contact <span>&middot;</span> </a>
-        <a href=""> socials <span>&middot;</span> </a>
+        <a href="#socials"> socials <span>&middot;</span> </a>
         <a href=""> about </a>
       </div>
     </div>
@@ -38,8 +38,8 @@
       <ul class="smaller">
         <!-- computers -->
         <li onclick="revealText('computers')">
-          <span class="bullets">1.</span> Why Computers? // Best Man-Made Thing
-          Ever
+          <span class="bullets">1.</span> Why Computers?
+          <span class="keyword"> // </span> Best Man-Made Thing Ever
           <div class="visually-hidden box" id="computers">
             I've been interested in
             <span class="keyword">computers</span> since I was a 15 year old
@@ -54,8 +54,8 @@
 
         <!-- linux -->
         <li onclick="revealText('linux')">
-          <span class="bullets">2.</span> Why I use Linux? // The Love of my
-          Life
+          <span class="bullets">2.</span> Why I use Linux?
+          <span class="keyword"> // </span> The Love of my Life
           <div class="visually-hidden box" id="linux">
             I love
             <span class="keyword">Linux</span>.
@@ -74,7 +74,8 @@
 
         <!-- why web dev lately -->
         <li onclick="revealText('web-dev')">
-          <span class="bullets">3.</span> Why Am I learning Web Dev lately? //
+          <span class="bullets">3.</span> Why Am I learning Web Dev lately?
+          <span class="keyword"> // </span>
           Current Shizz
           <div class="visually-hidden box" id="web-dev">
             I've been doing a lot of
@@ -96,8 +97,8 @@
 
         <!-- want to learn/dream of a future in -->
         <li onclick="revealText('future')">
-          <span class="bullets">4.</span> What is my aim for the future? // What
-          Next?
+          <span class="bullets">4.</span> What is my aim for the future?
+          <span class="keyword"> // </span> What Next?
           <div class="visually-hidden box" id="future">
             I have tinkered around in a lot of things/tools for the past few
             years and from what I've observed, I've come to this conclusion that
@@ -120,7 +121,8 @@
 
         <!-- what I do in my free time -->
         <li onclick="revealText('free-time')">
-          <span class="bullets">5.</span> What do i do in my free time? //
+          <span class="bullets">5.</span> What do i do in my free time?
+          <span class="keyword"> // </span>
           Hobbies
           <div class="visually-hidden box" id="free-time">
             I like to spend my
@@ -232,9 +234,9 @@
             alt="<%= p.name %>'s image"
             class="project-img"
           />
-          <p><%= p.description %></p>
+          <p class="description"><%= p.description %></p>
           <a href="/projects/<%= p.readMoreLink %>" class="read-more">
-            Read More
+            read more about this project...
           </a>
         </div>
         <% }); %>
@@ -243,7 +245,23 @@
       <!-- end of projects -->
       <hr />
       <!-- blogs -->
+      <p class="title">Blogs // Some boring stuff that I've written</p>
+      <% blogs.forEach(function(b) { %>
+      <div class="box-container">
+        <div class="box">
+          <h2><%= b.title %></h2>
+          <p class="description"><%= b.description %></p>
+          <a href="<%= b.link %>" class="read-more">
+            read the thing (beware of boredom) ...
+          </a>
+        </div>
+        <% }); %>
+        <a href="/blogs" class="read-more"> see all blogs... </a>
+      </div>
+      <!-- end of blogs -->
+      <hr />
       <!-- social media/ email links -->
+      <p class="title" id="socials">Socials // Where I waste my time</p>
       <!-- end of contents -->
     </div>
     <script src="js/home.js"></script>
