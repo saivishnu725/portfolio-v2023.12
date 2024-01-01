@@ -72,6 +72,17 @@ let blogs = [
     }
 ];
 
+// social links
+let socials = {
+    github: "https://github.com/saivishnu725",
+    linkedin: "https://www.linkedin.com/in/saivishnu725",
+    twitter: "https://twitter.com/saivishnu725",
+    instagram: "https://www.instagram.com/_sai.vishnu_",
+    reddit: "https://www.reddit.com/user/saivishnu725",
+    gmail: "mailto:theunconcernedape@gmail.com",
+    discord: "https://discordapp.com/users/627764789342371840"
+};
+
 // Routes
 
 // GET: home page
@@ -80,7 +91,8 @@ app.get("/", function (req, res) {
         current_age: current_age,
         status: life_status,
         projects: projects,
-        blogs: blogs
+        blogs: blogs,
+        socials: socials
     });
 });
 
