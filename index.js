@@ -105,7 +105,7 @@ app.get("/", function (req, res) {
 
 // Get: blog's primary page
 app.get("/blog", function (req, res) {
-    res.send("Blog page");
+    res.render("blogs/blog");
 });
 
 app.get("/blog/:title", function (req, res) {
@@ -115,7 +115,7 @@ app.get("/blog/:title", function (req, res) {
     if (availableTitle.includes(requestedTitle)) {
         res.send(requestedTitle);
         // Open the page
-        // res.render("blog/" + requestedTitle);
+        // res.render("blogs/" + requestedTitle);
     } else {
         //  open a 404 error page
         // TODO: create a todo page
