@@ -83,6 +83,13 @@ let socials = {
     discord: "https://discordapp.com/users/627764789342371840"
 };
 
+// blog names
+let availableTitle = [
+    "title-1",
+    "title-2",
+    "title-3"
+];
+
 // Routes
 
 // GET: home page
@@ -94,6 +101,26 @@ app.get("/", function (req, res) {
         blogs: blogs,
         socials: socials
     });
+});
+
+// Get: blog's primary page
+app.get("/blog", function (req, res) {
+    res.send("Blog page");
+});
+
+app.get("/blog/:title", function (req, res) {
+    const requestedTitle = req.params.title;
+
+    // if the page is available, open it. Or else, send a 404
+    if (availableTitle.includes(requestedTitle)) {
+        res.send(requestedTitle);
+        // Open the page
+        // res.render("blog/" + requestedTitle);
+    } else {
+        //  open a 404 error page
+        // TODO: create a todo page
+        res.status(404).send(`404 Page Not Found` + `<br /> <a href='/'> Go back home </a>`);
+    }
 });
 
 app.listen(3000, function () {
