@@ -22,6 +22,10 @@ body {
   margin: 0 auto;
 }
 
+::selection {
+  background: #6e17b1;
+}
+
 #header {
   margin-top: 15px;
   height: 182px;
@@ -33,7 +37,7 @@ body {
 }
 
 /* media query that converts the anchor tags inside a div to be block elements instead of inline when the device width is less than 560px */
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 690px) {
   #header a {
     display: block;
   }
@@ -84,6 +88,8 @@ body {
   max-width: 550px;
   text-align: center;
   padding-bottom: 80px;
+  margin-top: 50px;
+  font-size: 0.8rem;
 }
 
 .bold {
@@ -132,10 +138,13 @@ li {
   color: #808080;
   /* un-selectable */
   user-select: none;
-  -webkit-user-select: none; /* Chrome/Safari */
-  -moz-user-select: none; /* Firefox */
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
   /* un-draggable */
-  -webkit-user-drag: none; /* Chrome/Safari */
+  -webkit-user-drag: none;
+  /* Chrome/Safari */
 }
 
 .sub-keywords {
@@ -213,11 +222,6 @@ li {
 
 .socials a {
   text-decoration: none;
-}
-
-#footer {
-  margin-top: 50px;
-  font-size: 0.8rem;
 }
 
 #footer a {
