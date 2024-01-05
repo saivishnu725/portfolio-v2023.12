@@ -38,7 +38,7 @@ let calculateAge = function (day, month, year) {
 let current_age = calculateAge(27, 6, 2003);
 
 // my current life status (study, work, etc.)
-let life_status = "studying BCA at New Horizon College, Bangalore.";
+let life_status = "studying BCA in Bangalore.";
 
 // projects
 let projects = [
@@ -103,11 +103,12 @@ app.get("/", function (req, res) {
     });
 });
 
-// Get: blog's primary page
+// GET: blog's primary page
 app.get("/blog", function (req, res) {
     res.render("blogs/blog");
 });
 
+// GET: blog pages
 app.get("/blog/:title", function (req, res) {
     const requestedTitle = req.params.title;
 
@@ -121,6 +122,11 @@ app.get("/blog/:title", function (req, res) {
         // TODO: create a todo page
         res.status(404).send(`404 Page Not Found` + `<br /> <a href='/'> Go back home </a>`);
     }
+});
+
+// GET: contact page
+app.get("/contact", function (req, res) {
+    res.render("contact", { socials: socials });
 });
 
 app.listen(3000, function () {
