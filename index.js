@@ -90,6 +90,8 @@ let availableTitle = [
     "title-3"
 ];
 
+let email = "theunconcernedape@gmail.com";
+
 // Routes
 
 // GET: home page
@@ -126,7 +128,7 @@ app.get("/blog/:title", function (req, res) {
 
 // GET: contact page
 app.get("/contact", function (req, res) {
-    res.render("contact", { socials: socials });
+    res.render("contact", { socials: socials, email: email });
 });
 
 app.listen(3000, function () {
