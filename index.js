@@ -90,7 +90,11 @@ let availableTitle = [
     "title-3"
 ];
 
+// email
 let email = "theunconcernedape@gmail.com";
+
+// resume link
+let resume = "https://www.dropbox.com/scl/fi/fxeyr9bekxyzvdpt1tfqf/saivishnu_-_resume_sept_2023.pdf?rlkey=xib7nor9xh2ruhk3wauzr8tbi&dl=0";
 
 // Routes
 
@@ -129,6 +133,11 @@ app.get("/blog/:title", function (req, res) {
 // GET: contact page
 app.get("/contact", function (req, res) {
     res.render("contact", { socials: socials, email: email });
+});
+
+// GET: resume link
+app.get("/resume", function (req, res) {
+    res.redirect(resume);
 });
 
 app.listen(3000, function () {
