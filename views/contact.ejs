@@ -10,7 +10,33 @@
   <body>
     <div id="center">
       <span class="sub-keywords"> <a href="/"> (← go back home) </a> </span>
-      <h1>contact me</h1>
+      <!-- about -->
+      <h1>before you contact</h1>
+      <h4>little about me hehe</h4>
+      <p>
+        you've already probably read everything about me from the home page so
+        there isn't much else to say. <br />
+        I really enjoy the beach, sunsets, staring at my wallpapers as well as
+        my wall / ceiling. I am a bit quirky and weird but I am also a very nice
+        person (hopefully). <br />
+      </p>
+      <p>
+        I am also a very big fan of the
+        <span class="sub-keywords keyword">The Office</span> and
+        <span class="sub-keywords keyword">Modern Family</span> so if you are
+        too, we can be friends. <br />
+      </p>
+
+      <p>
+        I've recently taken interest into low-level programming and I intend to
+        contribute to the Linux Kernel some day. So if you are experienced in
+        this process, do help me get started by sharing appropriate resources
+        and advices. <br />
+      </p>
+
+      <!-- contact -->
+      <hr />
+      <h1>you can contact me now xD</h1>
       <form onsubmit="return sendMail(<%= socials.gmail%>);">
         <h3>Use this to e-mail me!!</h3>
         <label for="name">Name:</label><br />
@@ -23,7 +49,8 @@
         <textarea id="message" name="message"></textarea> <br />
         <input type="submit" value="Submit" title="pakka?" /> <br />
       </form>
-      <h1>you can find me here</h1>
+      <!-- socials -->
+      <h2>you can also find me lurking around here</h2>
       <%- include('common/socials') %>
     </div>
 
