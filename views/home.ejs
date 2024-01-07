@@ -263,40 +263,15 @@
       <hr />
       <!-- social media/ email links -->
       <p class="title" id="socials">Socials // Where I waste my time</p>
-      <div class="socials">
-        <!-- TODO: give the social links -->
-        <a href="<%= socials.github %>" target="_blank">
-          <img src="images/socials/github.svg" alt="Github" />
-        </a>
-        <a href="<%= socials.discord %>" target="_blank">
-          <img src="images/socials/discord.svg" alt="Discord" />
-        </a>
-        <a href="<%= socials.instagram %>" target="_blank">
-          <img src="images/socials/instagram.svg" alt="Instagram" />
-        </a>
-        <a href="<%= socials.twitter %>" target="_blank">
-          <img src="images/socials/twitter.svg" alt="X (formerly Twitter)" />
-        </a>
-        <br />
-        <a href="<%= socials.reddit %>" target="_blank">
-          <img src="images/socials/reddit.svg" alt="Reddit" />
-        </a>
-        <a href="<%= socials.linkedin %>" target="_blank">
-          <img src="images/socials/linkedin.svg" alt="LinkedIn" />
-        </a>
-        <a href="<%= socials.gmail %>" target="_blank">
-          <img src="images/socials/gmail.svg" alt="GMail" />
-        </a>
-
-        <p>
-          I spend most of my time on
-          <span class="sub-keywords">Instagram</span> and
-          <span class="sub-keywords">Discord</span>. <br />
-          However, you will find me replying to your
-          <span class="underline">Email</span> faster than any of my other
-          socials.
-        </p>
-      </div>
+      <%- include('common/socials') %>
+      <p>
+        I spend most of my time on
+        <span class="sub-keywords">Instagram</span> and
+        <span class="sub-keywords">Discord</span>. <br />
+        However, you will find me replying to your
+        <span class="underline">Email</span> faster than any of my other
+        socials.
+      </p>
       <!-- end of social media/ email links -->
       <!-- end of contents -->
     </div>

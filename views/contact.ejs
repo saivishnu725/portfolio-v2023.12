@@ -23,31 +23,8 @@
         <textarea id="message" name="message"></textarea> <br />
         <input type="submit" value="Submit" title="pakka?" /> <br />
       </form>
-      <div class="socials">
-        <h1>you can find me here</h1>
-        <!-- TODO: give the social links -->
-        <a href="<%= socials.github %>" target="_blank">
-          <img src="images/socials/github.svg" alt="Github" title="Github" />
-        </a>
-        <a href="<%= socials.discord %>" target="_blank">
-          <img src="images/socials/discord.svg" alt="Discord" />
-        </a>
-        <a href="<%= socials.instagram %>" target="_blank">
-          <img src="images/socials/instagram.svg" alt="Instagram" />
-        </a>
-        <a href="<%= socials.twitter %>" target="_blank">
-          <img src="images/socials/twitter.svg" alt="X (formerly Twitter)" />
-        </a>
-        <a href="<%= socials.reddit %>" target="_blank">
-          <img src="images/socials/reddit.svg" alt="Reddit" />
-        </a>
-        <a href="<%= socials.linkedin %>" target="_blank">
-          <img src="images/socials/linkedin.svg" alt="LinkedIn" />
-        </a>
-        <a href="<%= socials.gmail %>" target="_blank">
-          <img src="images/socials/gmail.svg" alt="GMail" />
-        </a>
-      </div>
+      <h1>you can find me here</h1>
+      <%- include('common/socials') %>
     </div>
 
     <!-- footer -->
