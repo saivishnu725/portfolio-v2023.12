@@ -248,3 +248,39 @@ li {
   padding: 0;
   font-family: "Courier New", Courier, monospace;
 }
+
+form {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #333;
+  border-radius: 25px;
+}
+
+form input[type="text"],
+form textarea {
+  width: 35%;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+  background-color: #333;
+  border: 1px solid #5e5e5e;
+  color: #c4bfb8;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+form input[type="submit"]:hover {
+  background-color: #555;
+}
