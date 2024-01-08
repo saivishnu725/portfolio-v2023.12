@@ -111,7 +111,7 @@ app.get("/", function (req, res) {
 
 // GET: blog's primary page
 app.get("/blog", function (req, res) {
-    res.render("blogs/blog", { blogs: blogs });
+    res.render("blogs/blog", { blogs: blogs, socials: socials });
 });
 // GET: blog pages
 app.get("/blog/:title", function (req, res) {
