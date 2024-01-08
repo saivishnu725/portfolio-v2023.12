@@ -8,6 +8,21 @@
     <title>Blog of The Unconcerned Ape</title>
   </head>
   <body>
-    
+    <div id="center">
+      <h1>My Blogs / Rants</h1>
+      <% blogs.forEach(function(b) { %>
+
+      <div
+        class="box-container"
+        onclick="window.open('<%= b.link %>', '_blank');"
+      >
+        <div class="box">
+          <h3><%= b.title %></h3>
+          <p class="description"><%= b.description %></p>
+          <!-- <a href="<%= b.link %>" class="read-more"> read it. </a> -->
+        </div>
+      </div>
+      <% }); %>
+    </div>
   </body>
 </html>
