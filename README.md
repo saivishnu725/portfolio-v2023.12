@@ -12,7 +12,7 @@ Heavily (downright copying the design without asking any sort of permission but 
 ## Hosting
 
 1. It won't be hosted until it is completely finished
-2. After which, I "might" buy a VPS in Hetzner.
+2. After which, I "might" buy a VPS.
 3. The domain is going to be: [theunconcernedape.me](https://theunconcernedape.me) (check out my 3 years old site for now).
 
 ## how to check it out locally
