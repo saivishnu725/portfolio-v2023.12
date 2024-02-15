@@ -11,7 +11,7 @@ const __dirname = dirname(__filename);
 
 // public folder
 app.use(express.static("public"));
-
+app.use('/public', express.static(__dirname + '/public'));
 // use ejs
 app.set("view engine", "ejs");
 
