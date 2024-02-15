@@ -50,6 +50,15 @@ body {
   }
 }
 
+/* use media query to make the width of the .project-img to be 50px less than the current screen size if the screen is less than 700px in width
+ */
+@media screen and (max-width: 700px) {
+  .project-img {
+     width: 40px;
+     height: 40px;
+  }
+}
+
 #header #nav {
   position: absolute;
   right: 10px;
