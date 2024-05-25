@@ -1,21 +1,18 @@
 # Portfolio
 
-My new Portfolio -v2 ([v1](https://github.com/saivishnu725/portfolio-v2023-10) is stopped because it sucks). _Dated 22/12/2023._
+My new Portfolio -v2 (development for [v1](https://github.com/saivishnu725/portfolio-v2023-10) was stopped because it sucks). _Dated 22-12-2023._
 
-Heavily (downright copying the design without asking any sort of permission but given what I read, I don't think they would send any "legal goons" over it.) inspired by [Nicky Case](https://github.com/ncase)'s [website](https://ncase.me/)
-
-## Plans
-
-1. Design the site!! **_(NOTE: Important)_**
-2. Host it lol
+Heavily (downright copying the design without asking any sort of permission but given what I read, I don't think they would send any "legal goons" over it.) inspired by [Nicky Case](https://github.com/ncase)'s [website](https://ncase.me/).
 
 ## Hosting
 
-1. It won't be hosted until it is completely finished
-2. After which, I "might" buy a VPS.
-3. The domain is going to be: [theunconcernedape.me](https://theunconcernedape.me) (check out my 3 years old site for now).
+1. Site is live on [theunconcernedape.me](https://theunconcernedape.me).
+2. I maintain a _**VPS**_ from `DigitalOcean`.
+3. `nginx` and `docker` work together to make this happen.
 
 ## how to check it out locally
+
+### using the npm method
 
 1. Install node dependencies
 
@@ -35,7 +32,16 @@ Heavily (downright copying the design without asking any sort of permission but 
    node index.js
    ```
 
-3. Site is live at [localhost:3000](http://localhost:3000). Open it in your preferred browser.
+### using docker (recommended)
+
+1. Have `docker` and `docker-compose` installed
+
+   ```bash
+   docker-compose up --build
+   ```
+
+Site is live at [localhost:3000](http://localhost:3000). Open it
+in your preferred browser.
 
 ## Contributors
 
