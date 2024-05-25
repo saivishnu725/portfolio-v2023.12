@@ -106,34 +106,10 @@ app.get("/", function (req, res) {
         status: life_status,
         projects: projects,
         blogs: blogs,
+        blog_link: "https://blog.theunconcernedape.me",
         socials: socials
     });
 });
-
-// GET: blog subdomain
-const blogRouter = express.Router();
-blogRouter.get("/", function (req, res) {
-    console.log("blog page");
-    res.render("blogs/blog", { blogs: blogs, socials: socials });
-});
-
-// Register the subdomain middleware
-app.use(subdomain('blogs', blogRouter));
-
-// GET: blog page
-blogRouter.get("/:title", function (req, res) {
-    const requestedTitle = req.params.title;
-
-    // if the page is available, open it. Or else, send a 404
-    if (availableTitle.includes(requestedTitle)) {
-        res.send(requestedTitle);
-    } else {
-        //  open a 404 error page
-        // TODO: create a todo page
-        res.status(404).send(`404 Page Not Found` + `<br /> <a href='/'> Go back home </a>`);
-    }
-});
-
 
 // GET: contact page
 app.get("/contact", function (req, res) {
