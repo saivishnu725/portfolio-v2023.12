@@ -1,5 +1,4 @@
 import express from "express";
-import subdomain from "express-subdomain";
 const app = express();
 
 //path
@@ -84,12 +83,6 @@ let socials = {
     discord: "https://discordapp.com/users/627764789342371840"
 };
 
-// blog names
-let availableTitle = [
-    "title-1",
-    "title-2",
-    "title-3"
-];
 
 // email
 let email = "theunconcernedape@gmail.com";
