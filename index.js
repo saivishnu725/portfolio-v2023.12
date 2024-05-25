@@ -1,6 +1,5 @@
 import express from "express";
 import subdomain from "express-subdomain";
-
 const app = express();
 
 //path
@@ -14,7 +13,8 @@ app.use(express.static("public"));
 app.use('/public', express.static(__dirname + '/public'));
 // use ejs
 app.set("view engine", "ejs");
-
+//image folder
+app.use('/images', express.static(__dirname + 'public/images'));
 
 // Data stuff
 // TODO: get data from a json file
