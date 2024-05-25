@@ -95,7 +95,7 @@ let availableTitle = [
 let email = "theunconcernedape@gmail.com";
 
 // resume link
-let resume = "https://www.dropbox.com/scl/fi/fxeyr9bekxyzvdpt1tfqf/saivishnu_-_resume_sept_2023.pdf?rlkey=xib7nor9xh2ruhk3wauzr8tbi&dl=0";
+let resume = "https://www.dropbox.com/scl/fi/qq8yorixj9dagnti9phm4/saivishnu_-_resume_march_2024.pdf?rlkey=7zs4tn3hobmyemwl8jtfd4gyi&st=6jciqs9v&dl=0";
 
 // Routes
 
